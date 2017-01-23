@@ -1,0 +1,16 @@
+﻿<h1>Kittens</h1>
+
+<p>Below you will find our selection of breathtakingly cute kittens.</p>
+
+<p *ngIf="!kittens"><em>Loading kittens...</em></p>
+
+<div class="kitten-list" *ngIf="kittens">
+    <div class="kitten" *ngFor="let kitten of kittens">
+        <div class="name">{{ kitten.name }}</div>
+        <img class="image" src="{{ kitten.image }}" />
+        <div class="description">{{ kitten.description }}</div>
+        <div class="price">Price: {{ kitten.price }} kr</div>
+        <button class="btn btn-primary cart-button">Add to cart</button>
+        <!--<button md-raised-button>Add to cart2</button>-->
+    </div>
+</div>

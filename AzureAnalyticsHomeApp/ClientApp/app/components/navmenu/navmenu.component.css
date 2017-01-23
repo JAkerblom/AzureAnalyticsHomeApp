@@ -1,3 +1,28 @@
+.navbar img {
+    /*-webkit-filter: grayscale(1);
+    filter: grayscale(1);*/
+    -webkit-filter: invert(0.8);
+    filter: invert(0.8);
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 200%;
+}
+
+.navbar .azure-nav-img img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.navbar .azure-nav-img {
+    position: relative;
+    margin-top: 5px;
+    width: 100%;
+}
+
 li .glyphicon {
     margin-right: 10px;
 }
@@ -55,5 +80,11 @@ li.link-active a:focus {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .azure-nav-img {
+        display: none;
     }
 }
